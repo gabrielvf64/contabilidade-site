@@ -24,6 +24,18 @@ p {
 }
 
 /* Classes de utilidade */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.texto-centralizado {
+  text-align: center;
+}
+
 /* Cor primária */
 .texto-primario {
   color: #93cb52;
@@ -35,10 +47,20 @@ p {
   line-height: 1.1;
 }
 
+.cabecalho-m {
+ font-size: 2rem;
+ margin-bottom: 0.75rem;
+ line-height: 1.1;
+}
+
 .paragrafo {
   font-size: 1.3rem;
   margin-bottom: 2rem;
 }
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
 
 .btn {
   display: inline-block;
@@ -111,5 +133,31 @@ p {
   position: absolute;
   top: 60px;
   left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Parte do O que fazemos */
+#oque .itens {
+  /* Alinha horizontalmente */
+  display: flex;
+  /* Distância entre os elementos, em todos os lados*/
+  padding: 1rem;
+  
+}
+
+#oque .itens .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#oque .itens .item i {
+  background: #93cb52;
+  /* Entre o icone e o background*/
+  padding: 1rem;
+  border-radius: 50%;
+  /* Entre o nome e o ícone*/
+  margin-bottom: 1rem;
 }
