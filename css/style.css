@@ -10,6 +10,7 @@
 /* Usando fonte Roboto importada do Google Fonts */
 body {
   font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
 }
 
 /* Removendo o underscore dos links */
@@ -26,6 +27,35 @@ p {
 /* Cor primária */
 .texto-primario {
   color: #93cb52;
+}
+
+.cabecalho {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.paragrafo {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #93cb52;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #7ab436;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
 }
 
 /* Navbar - grudada, ficar na ponta esquerda superior */
@@ -57,4 +87,29 @@ p {
 #navbar ul li a:hover {
   background: #93cb52;
   border-radius: 5px;
+}
+
+/* Principal */
+#principal {
+  background: #333 url('../img/principal.jpg')
+  no-repeat center center/cover;
+  /* Cobriu a tela toda*/
+  height: 100vh;
+  color: #fff;
+}
+
+/* Básico de flex-box*/
+#principal .conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay - Transparência, escurecer um pouco mais a img*/
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
