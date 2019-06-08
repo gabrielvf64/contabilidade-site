@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 /* Resetando margin e padding */
 * {
@@ -9,7 +9,7 @@
 
 /* Usando fonte Roboto importada do Google Fonts */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.4;
 }
 
@@ -51,6 +51,11 @@ p {
   color: #f4f4f4;
 }
 
+.bg-primario {
+  background: #93cb52;
+  color: #fff;
+}
+
 .cabecalho {
   font-size: 4rem;
   margin-bottom: 0.75rem;
@@ -58,9 +63,9 @@ p {
 }
 
 .cabecalho-m {
- font-size: 2rem;
- margin-bottom: 0.75rem;
- line-height: 1.1;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
 }
 
 .paragrafo {
@@ -68,13 +73,25 @@ p {
   margin-bottom: 2rem;
 }
 
-.py-1 { padding: 1.5rem 0; }
-.py-2 { padding: 2rem 0; }
-.py-3 { padding: 3rem 0; }
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
 
-.p-1 {padding: 1rem;}
-.p-2 {padding: 2rem;}
-.p-3 {padding: 3rem;}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
 
 .btn {
   display: inline-block;
@@ -95,8 +112,8 @@ p {
 }
 
 .lista {
- margin: 0.5rem 0;
- list-style: none;
+  margin: 0.5rem 0;
+  list-style: none;
 }
 
 .lista li {
@@ -119,7 +136,7 @@ p {
 }
 
 #navbar ul {
-  display: flex;;
+  display: flex;
   align-items: center;
   list-style: none;
 }
@@ -137,8 +154,7 @@ p {
 
 /* Principal */
 #principal {
-  background: #333 url('../img/principal.jpg')
-  no-repeat center center/cover;
+  background: #333 url("../img/principal.jpg") no-repeat center center/cover;
   /* Cobriu a tela toda*/
   height: 100vh;
   color: #fff;
@@ -168,7 +184,6 @@ p {
   display: flex;
   /* Distância entre os elementos, em todos os lados*/
   padding: 1rem;
-  
 }
 
 #oque .itens .item {
@@ -196,8 +211,7 @@ p {
 }
 
 #quem .quem-img {
-  background: url('../img/pessoas.jpg') no-repeat
-  center center/cover;
+  background: url("../img/pessoas.jpg") no-repeat center center/cover;
 }
 
 /* Seção Clientes */
@@ -209,4 +223,28 @@ p {
   display: block;
   margin: auto;
   width: 60%;
+}
+
+/* Formulário de Contato */
+#contato {
+  display: flex;
+}
+
+#contato .formulario-contato,
+#contato .mapa {
+  flex: 1;
+}
+
+#contato .formulario-contato .form-group {
+  margin: 0.7rem;
+}
+
+#contato .formulario-contato label {
+  display: block;
+}
+
+#contato .formulario-contato input,
+#contato .formulario-contato textarea {
+  width: 100%;
+  padding: 0.5rem;
 }
