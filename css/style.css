@@ -41,6 +41,16 @@ p {
   color: #93cb52;
 }
 
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
 .cabecalho {
   font-size: 4rem;
   margin-bottom: 0.75rem;
@@ -62,6 +72,10 @@ p {
 .py-2 { padding: 2rem 0; }
 .py-3 { padding: 3rem 0; }
 
+.p-1 {padding: 1rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
+
 .btn {
   display: inline-block;
   color: #fff;
@@ -78,6 +92,16 @@ p {
 .btn-dark {
   background: #333;
   color: #fff;
+}
+
+.lista {
+ margin: 0.5rem 0;
+ list-style: none;
+}
+
+.lista li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
 }
 
 /* Navbar - grudada, ficar na ponta esquerda superior */
@@ -160,4 +184,18 @@ p {
   border-radius: 50%;
   /* Entre o nome e o ícone*/
   margin-bottom: 1rem;
+}
+
+/* Seção: Quem Somos */
+#quem {
+  display: flex;
+}
+
+#quem div {
+  flex: 1;
+}
+
+#quem .quem-img {
+  background: url('../img/pessoas.jpg') no-repeat
+  center center/cover;
 }
