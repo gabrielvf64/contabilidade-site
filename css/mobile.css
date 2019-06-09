@@ -17,7 +17,7 @@
 }
 
 /* Smartphones */
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   #navbar {
     flex-direction: column;
     align-items: center;
@@ -62,7 +62,7 @@
   }
 }
 
-@media(max-height: 568px) {
+@media (max-height: 568px) {
   #principal .conteudo-principal {
     margin-top: -2rem;
     top: 140px;
